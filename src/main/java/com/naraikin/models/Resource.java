@@ -13,12 +13,6 @@ public class Resource {
      */
     private String resourceString;
 
-    private boolean isValidRes = true;
-
-    public boolean isValidRes() {
-        return isValidRes;
-    }
-
     /**
      * Метод возвращает строковый путь к файлу
      * @return строка путь к файлу

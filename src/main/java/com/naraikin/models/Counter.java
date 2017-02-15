@@ -6,12 +6,12 @@ import java.util.concurrent.atomic.AtomicLong;
 /**
  * Created by dmitrii on 09.02.17.
  *
- *  Класс хранящий сумму числе
+ *  Класс хранящий сумму чисел
  *  с блоками synchronized
  */
 public class Counter {
-    private volatile AtomicLong value = new AtomicLong(0);
-    private volatile AtomicBoolean error = new AtomicBoolean(false);
+    private AtomicLong value = new AtomicLong(0);
+    private AtomicBoolean error = new AtomicBoolean(false);
 
     /**
      * Возвращает флаг ошибки потоков

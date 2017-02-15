@@ -51,7 +51,6 @@ public class ResourceHandler extends Thread {
                 String line;
                 while (((line = bufferedReader.readLine()) != null)) {
                     int sumInString = Parser.getPositiveEvenSum(line);
-
                     if(!counter.isError()) {
                         counter.addValueAndPrint(sumInString);
                         logger.trace(counter.getValue() +
